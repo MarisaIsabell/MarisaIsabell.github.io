@@ -341,14 +341,14 @@ nav a:hover {
 
 
 .nav-icons img {
-  width: 14px !important;
-  height: 14px !important;
-  max-width: 14px !important;
-  max-height: 14px !important;
+  width: 6px !important;
+  height: 6px !important;
+  max-width: 6px !important;
+  max-height: 6px !important;
 }
 
 .nav-icons a {
-  width: 18px;
-  height: 18px;
+  width: 8px;
+  height: 8px;
   padding: 0 !important;
 }
