@@ -233,3 +233,10 @@ main section:first-child h2 {
 main section:first-child p {
   font-size: 1.15rem;
 }
+nav {
+  margin-bottom: 70px !important;
+}
+
+.hero {
+  margin-top: 0;
+}
