@@ -340,15 +340,3 @@ nav a:hover {
 }
 
 
-.nav-icons img {
-  width: 30px !important;
-  height: 30px !important;
-  max-width: 30px !important;
-  max-height: 30px !important;
-}
-
-.nav-icons a {
-  width: 30px;
-  height: 30px;
-  padding: 0 !important;
-}
