@@ -337,3 +337,17 @@ nav a:hover {
     margin-top: 4px;
   }
 }
+
+
+.nav-icons img {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+  max-height: 14px !important;
+}
+
+.nav-icons a {
+  width: 18px;
+  height: 18px;
+  padding: 0 !important;
+}
