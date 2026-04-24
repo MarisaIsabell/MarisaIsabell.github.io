@@ -1,0 +1,82 @@
+[
+  {
+    "year": 2026,
+    "authors": "Keller, M. I., de Zawadzki, A., Thiele, M., Suvitaival, T., Sulek, K., Kuhn, M., Schudoma, C., Podlesny, D., Nishijima, S., Fullam, A., Kim, C. Y., Niu, L., Wretlind, A., Hansen, J. K., Israelsen, M., Johansen, S., Akanni, W., Hazenbrink, D., Juel, H. B., Mann, M., Hansen, T., Krag, A., Bork, P., & Legido-Quigley, C.",
+    "title": "Alcohol-related liver disease disrupts bile acid homeostasis and gut microbial bile acid metabolism",
+    "journal": "JHEP Reports",
+    "status": "published",
+    "doi": "10.1016/j.jhepr.2026.101848",
+    "selected": true,
+    "first_author": true
+  },
+  {
+    "year": 2025,
+    "authors": "Hansen, J. K., Israelsen, M., Nishijima, S., Stinson, S. E., Andersen, P., Johansen, S., Hansen, C. D., Brol, M. J., Klein, S., Schierwagen, R., Uschner, F. E., Sulek, K., Villesen, I. F., Lindvig, K. P., Thorhauge, K. H., Torp, N., Jensen, J. M., Keller, M. I., Jensen, G. H., Detlefsen, S., Leeming, D. J., Stankevic, E., Suvitaival, T., Zawadzki, A., Kuhn, M., Jensen, L. J., Karsdal, M., Trebicka, J., Israelsen, H., Legido-Quigley, C., Bork, P., Arumugam, M., Hansen, T., Thiele, M., & Krag, A.",
+    "title": "The postbiotic ReFerm® versus standard nutritional support in advanced alcohol-related liver disease (GALA-POSTBIO): a randomized controlled phase 2 trial",
+    "journal": "Nature Communications",
+    "status": "published",
+    "doi": "10.1038/s41467-025-60755-9",
+    "selected": false,
+    "first_author": false
+  },
+  {
+    "year": 2025,
+    "authors": "Nishijima, S., Stankevic, E., Aasmets, O., Schmidt, T. S. B., Nagata, N., Keller, M. I., Ferretti, P., Juel, H. B., Fullam, A., Robbani, S. M., Schudoma, C., Hansen, J. K., Holm, L. A., Israelsen, M., Schierwagen, R., Torp, N., Telzerow, A., Hercog, R., Kandels, S., et al.",
+    "title": "Fecal microbial load is a major determinant of gut microbiome variation and a confounder for disease associations",
+    "journal": "Cell",
+    "status": "published",
+    "doi": "10.1016/j.cell.2024.10.022",
+    "selected": false,
+    "first_author": false
+  },
+  {
+    "year": 2024,
+    "authors": "Keller, M. I. et al.",
+    "title": "Refined Enterotyping Reveals Dysbiosis in Global Fecal Metagenomes",
+    "journal": "bioRxiv",
+    "status": "preprint",
+    "doi": "10.1101/2024.08.13.607711",
+    "selected": true,
+    "first_author": true
+  },
+  {
+    "year": 2023,
+    "authors": "Lai, S., Yan, Y., Pu, Y., et al.",
+    "title": "Enterotypes of the human gut mycobiome",
+    "journal": "Microbiome",
+    "status": "published",
+    "doi": "10.1186/s40168-023-01586-y",
+    "selected": false,
+    "first_author": false
+  },
+  {
+    "year": 2022,
+    "authors": "Ruscheweyh, H.-J., Milanese, A., Paoli, L., Karcher, N., Clayssen, Q., Keller, M. I., Wirbel, J., Bork, P., Mende, D. R., Zeller, G., & Sunagawa, S.",
+    "title": "Cultivation-independent genomes greatly expand taxonomic-profiling capabilities of mOTUs across various environments",
+    "journal": "Microbiome",
+    "status": "published",
+    "doi": "10.1186/s40168-022-01410-z",
+    "selected": false,
+    "first_author": false
+  },
+  {
+    "year": 2021,
+    "authors": "Metzger, M. I., Graeber, S. Y., Stahl, M., Sommerburg, O., Mall, M. A., Dalpke, A. H., & Boutin, S.",
+    "title": "A volatile and dynamic longitudinal microbiome is associated with less reduction in lung function in adolescents with cystic fibrosis",
+    "journal": "Frontiers in Cellular and Infection Microbiology",
+    "status": "published",
+    "doi": "10.3389/fcimb.2021.763121",
+    "selected": true,
+    "first_author": true
+  },
+  {
+    "year": 2019,
+    "authors": "Keller, M. I.",
+    "title": "Microbial genomes from non-human primate gut metagenomes expand the primate-associated bacterial tree of life with over 1000 novel species",
+    "journal": "Genome Biology",
+    "status": "published",
+    "doi": "10.1186/s13059-019-1923-9",
+    "selected": false,
+    "first_author": true
+  }
+]
