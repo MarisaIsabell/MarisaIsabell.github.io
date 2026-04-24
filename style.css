@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Quicksand:wght@300;400;500;600&display=swap');
 :root {
   --background: #f7f4ef;
   --text: #24302f;
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: Garamond, "EB Garamond", Georgia, serif;
+  font-family: "Cormorant Garamond", Garamond, Georgia, serif;
   max-width: 860px;
   margin: 56px auto;
   padding: 0 28px;
@@ -27,9 +28,14 @@ header {
 h1,
 h2,
 h3,
-nav,
 .subtitle {
-  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  font-family: "Quicksand", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
 }
 
 h1 {
