@@ -54,7 +54,8 @@ h1 {
 
 nav {
   margin-top: 32px;
-  padding-top: 16px;
+  padding-top: 0;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--border);
 }
 
