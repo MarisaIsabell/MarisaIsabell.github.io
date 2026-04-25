@@ -388,11 +388,11 @@ nav a:hover {
   vertical-align: middle;
 }
 
-/* Intro layout: text left, photo right */
-main .intro-section {
+/* Force homepage intro to be two columns */
+section.intro-section {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 320px !important;
-  gap: 70px !important;
+  column-gap: 70px !important;
   align-items: start !important;
 
   background: transparent !important;
@@ -402,59 +402,61 @@ main .intro-section {
   border-radius: 0 !important;
 
   padding: 0 !important;
-  margin-top: 0 !important;
   margin-bottom: 90px !important;
 }
 
-.intro-text {
-  grid-column: 1;
+section.intro-section .intro-text {
+  grid-column: 1 !important;
 }
 
-.intro-photo-wrap {
-  grid-column: 2;
+section.intro-section .intro-photo-wrap {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
   display: flex !important;
   justify-content: flex-end !important;
   align-items: flex-start !important;
 }
 
-.intro-photo-wrap .profile-photo {
+section.intro-section .profile-photo {
   width: 285px !important;
   max-width: 285px !important;
   height: auto !important;
 }
 
-/* About text should not look like a card */
-.about-intro {
+section.intro-section .subtitle {
+  margin-bottom: 70px !important;
+}
+
+section.intro-section .about-intro {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
-  margin-top: 70px;
 }
 
-.about-intro h2 {
-  color: var(--text);
-  font-weight: 600;
+section.intro-section .about-intro h2 {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+  border-bottom: none !important;
 }
 
-/* Mobile only: stack photo and text */
 @media (max-width: 850px) {
-  main .intro-section {
+  section.intro-section {
     grid-template-columns: 1fr !important;
-    gap: 32px !important;
+    row-gap: 34px !important;
   }
 
-  .intro-text {
-    grid-column: 1;
+  section.intro-section .intro-text,
+  section.intro-section .intro-photo-wrap {
+    grid-column: 1 !important;
   }
 
-  .intro-photo-wrap {
-    grid-column: 1;
+  section.intro-section .intro-photo-wrap {
+    grid-row: auto !important;
     justify-content: flex-start !important;
-    order: -1;
   }
 
-  .intro-photo-wrap .profile-photo {
+  section.intro-section .profile-photo {
     width: 220px !important;
     max-width: 220px !important;
   }
