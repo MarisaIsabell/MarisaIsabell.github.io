@@ -104,9 +104,32 @@
           yearHeading.textContent = year;
           list.appendChild(yearHeading);
 
-          grouped[year].forEach(pub => {
-            const item = document.createElement("p");
-            item.className = "publication-item";
+        grouped[year].forEach(pub => {
+  const row = document.createElement("div");
+  row.className = "publication-row";
+
+  const main = document.createElement("div");
+  main.className = "publication-main";
+
+  const yearEl = document.createElement("div");
+  yearEl.className = "publication-year";
+  yearEl.textContent = pub.year;
+
+  const doiLink = pub.doi
+    ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer">doi:${pub.doi}</a>`
+    : "";
+
+  main.innerHTML = `
+    <span class="publication-authors">${pub.authors}</span>.
+    <strong class="publication-title">${pub.title}</strong>.
+    <em class="publication-journal">${pub.journal}</em>.
+    ${doiLink}
+  `;
+
+  row.appendChild(main);
+  row.appendChild(yearEl);
+  list.appendChild(row);
+});
 
             const doiLink = pub.doi
               ? `<a href/doi.org/${pub.doi}doi:${pub.doi}</a>`
