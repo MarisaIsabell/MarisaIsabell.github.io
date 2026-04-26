@@ -100,9 +100,14 @@
       Object.keys(grouped)
         .sort((a, b) => b.localeCompare(a))
         .forEach(year => {
-          const yearHeading = document.createElement("h3");
-          yearHeading.textContent = year;
-          list.appendChild(yearHeading);
+          const yearGroup = document.createElement("div");
+yearGroup.className = "publication-year-group";
+
+const separator = document.createElement("div");
+separator.className = "year-separator";
+
+list.appendChild(separator);
+list.appendChild(yearGroup);
 
         grouped[year].forEach(pub => {
   const row = document.createElement("div");
@@ -128,7 +133,7 @@
 
   row.appendChild(main);
   row.appendChild(yearEl);
-  list.appendChild(row);
+  yearGroup.appendChild(row);
 });
 
             const doiLink = pub.doi
