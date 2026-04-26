@@ -145,6 +145,32 @@ body {
 /* ============================================
    HERO SECTION
    ============================================ */
+
+.hero-icons {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0 40px 0;
+  align-items: center;
+}
+
+.hero-icons a {
+  display: inline-flex;
+}
+
+.hero-icons img,
+.hero-icons svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.75;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero-icons a:hover img,
+.hero-icons a:hover svg {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
 .hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
