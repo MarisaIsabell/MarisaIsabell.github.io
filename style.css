@@ -35,7 +35,7 @@ body {
   line-height: 1.8;
   color: var(--text);
   background: var(--background);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -129,8 +129,8 @@ body {
   grid-template-rows: auto;
   align-items: center;
   justify-items: stretch;
-  gap: 100px;
-  padding: 120px 80px;
+  gap: 60px;
+  padding: 80px 80px;
   background: linear-gradient(135deg, rgba(11, 143, 163, 0.03) 0%, rgba(232, 220, 200, 0.05) 100%);
   border-bottom: 1px solid var(--border);
   width: 100%;
@@ -145,20 +145,20 @@ body {
 
 .hero-text h1 {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 1;
-  margin: 0 0 20px 0;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
   letter-spacing: -0.02em;
   color: var(--text);
 }
 
 .hero-subtitle {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 400;
   color: var(--muted);
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
   letter-spacing: 0.02em;
 }
 
@@ -167,9 +167,9 @@ body {
 }
 
 .about-intro p {
-  font-size: 1.05rem;
-  line-height: 1.9;
-  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
   color: var(--text);
 }
 
@@ -183,7 +183,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
 
@@ -213,19 +213,19 @@ body {
    CARD GRID SECTION
    ============================================ */
 .card-grid-section {
-  padding: 140px 80px;
+  padding: 100px 80px;
   background: var(--white-soft);
   width: 100%;
 }
 
 .card-grid-section h2 {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.01em;
   text-align: center;
-  margin: 0 0 80px 0;
+  margin: 0 0 60px 0;
   width: 100%;
 }
 
@@ -233,7 +233,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
-  gap: 50px;
+  gap: 35px;
   width: 100%;
   margin-top: 0;
 }
@@ -261,7 +261,7 @@ body {
 
 .card-image {
   width: 100%;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   background: var(--beige);
   position: relative;
@@ -280,7 +280,7 @@ body {
 }
 
 .card-content {
-  padding: 40px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -288,19 +288,19 @@ body {
 
 .card-content h3 {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   color: var(--text);
   letter-spacing: -0.01em;
 }
 
 .card-content p {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--muted);
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.6;
   flex-grow: 1;
 }
 
@@ -308,7 +308,7 @@ body {
    CV SECTION
    ============================================ */
 .cv-section {
-  padding: 100px 80px;
+  padding: 80px;
   background: var(--beige);
   border-top: 2px solid var(--beige-dark);
   border-bottom: 2px solid var(--beige-dark);
@@ -317,18 +317,18 @@ body {
 
 .cv-section h2 {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--text);
-  margin: 0 0 30px 0;
+  margin: 0 0 24px 0;
   letter-spacing: -0.01em;
 }
 
 .cv-section p {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1.8;
   color: var(--text);
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
 }
 
 .cv-section p:last-child {
@@ -337,7 +337,7 @@ body {
 
 .cta-link {
   font-family: "Cormorant Garamond", Garamond, Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--accent-dark);
   text-decoration: none;
@@ -362,18 +362,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 3rem;
-  margin: 0 0 40px 0;
+  font-size: 2.5rem;
+  margin: 0 0 32px 0;
 }
 
 h3 {
-  font-size: 1.8rem;
-  margin: 0 0 24px 0;
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
 }
 
 p {
-  margin: 0 0 24px 0;
-  font-size: 1.05rem;
+  margin: 0 0 16px 0;
+  font-size: 0.95rem;
   line-height: 1.8;
   color: var(--text);
 }
@@ -415,10 +415,10 @@ section:nth-child(odd) {
    FOOTER
    ============================================ */
 footer {
-  padding: 60px 80px;
+  padding: 50px 80px;
   margin-top: 0;
   border-top: 2px solid var(--border);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--muted);
   background: var(--white-soft);
   text-align: center;
@@ -426,8 +426,8 @@ footer {
 }
 
 footer p {
-  margin-bottom: 12px;
-  font-size: 0.95rem;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
 }
 
 footer p:last-child {
@@ -461,8 +461,8 @@ footer a:hover {
 
   .hero-section {
     grid-template-columns: 1fr;
-    gap: 60px;
-    padding: 80px 60px;
+    gap: 50px;
+    padding: 60px 60px;
   }
 
   .hero-text {
@@ -473,11 +473,11 @@ footer a:hover {
   .hero-image {
     grid-column: 1;
     grid-row: 2;
-    height: 500px;
+    height: 400px;
   }
 
   .hero-text h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .image-placeholder {
@@ -485,19 +485,24 @@ footer a:hover {
   }
 
   .card-grid-section {
-    padding: 100px 60px;
-  }
-
-  .card-grid-section h2 {
-    font-size: 2.8rem;
-  }
-
-  .cv-section {
     padding: 80px 60px;
   }
 
+  .card-grid-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+  }
+
+  .cv-section {
+    padding: 60px;
+  }
+
   .cv-section h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+  }
+
+  section {
+    padding: 60px;
   }
 }
 
@@ -521,7 +526,8 @@ footer a:hover {
 
   .hero-section {
     grid-template-columns: 1fr;
-    padding: 60px 40px;
+    padding: 50px 40px;
+    gap: 40px;
   }
 
   .hero-text {
@@ -532,46 +538,51 @@ footer a:hover {
   .hero-image {
     grid-column: 1;
     grid-row: 2;
-    height: 400px;
+    height: 350px;
   }
 
   .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
   }
 
   .card-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
   }
 
   .card-grid-section {
-    padding: 80px 40px;
-  }
-
-  .card-grid-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-  }
-
-  .card-content {
-    padding: 30px;
-  }
-
-  .card-content h3 {
-    font-size: 1.6rem;
-  }
-
-  .cv-section {
     padding: 60px 40px;
   }
 
+  .card-grid-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .card-content {
+    padding: 24px;
+  }
+
+  .card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .cv-section {
+    padding: 50px 40px;
+  }
+
   .cv-section h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   footer {
@@ -579,7 +590,7 @@ footer a:hover {
   }
 
   section {
-    padding: 60px 40px;
+    padding: 50px 40px;
   }
 }
 
@@ -611,27 +622,27 @@ footer a:hover {
   }
 
   .hero-text h1 {
-    font-size: 2.2rem;
-    margin-bottom: 16px;
+    font-size: 2rem;
+    margin-bottom: 12px;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 30px;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
   }
 
   .about-intro p {
-    font-size: 1rem;
-    margin-bottom: 16px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
   }
 
   .card-grid-section {
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
 
   .card-grid-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
+    font-size: 1.6rem;
+    margin-bottom: 32px;
   }
 
   .card-grid {
@@ -648,11 +659,12 @@ footer a:hover {
   }
 
   .card-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
   }
 
   .card-content p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .cv-section {
@@ -660,16 +672,21 @@ footer a:hover {
   }
 
   .cv-section h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .cv-section p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
   }
 
   footer {
     padding: 30px 20px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  footer p {
+    margin-bottom: 6px;
   }
 
   section {
@@ -677,10 +694,10 @@ footer a:hover {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
