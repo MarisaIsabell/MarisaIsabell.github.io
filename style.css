@@ -159,13 +159,14 @@ body {
 
 .hero-icons img,
 .hero-icons svg {
-  width: 22px;
-  height: 22px;
+  width: 4px;
+  height: 4px;
   opacity: 0.75;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .hero-icons a:hover img,
+
 .hero-icons a:hover svg {
   opacity: 1;
   transform: translateY(-2px);
