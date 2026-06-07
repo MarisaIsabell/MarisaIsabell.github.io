@@ -180,6 +180,20 @@ main {
   border-bottom: 1px solid var(--border);
 }
 
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro-text {
   font-size: 1.05rem;
   line-height: 1.8;
@@ -189,6 +203,18 @@ main {
 
 .intro-text:last-of-type {
   margin-bottom: 32px;
+}
+
+.about-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .hero-icons {
@@ -369,12 +395,18 @@ footer a:hover {
     padding: 60px 40px;
   }
 
-  .about-intro-section,
+  .about-intro-section {
+    padding: 80px 40px;
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
   .flow-section {
     padding: 80px 40px;
   }
 
-  .about-intro-section h2,
   .flow-section h2 {
     font-size: 2rem;
   }
@@ -407,12 +439,19 @@ footer a:hover {
     padding: 40px 30px;
   }
 
-  .about-intro-section,
+  .about-intro-section {
+    padding: 60px 30px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
   .flow-section {
     padding: 60px 30px;
   }
 
-  .about-intro-section h2,
   .flow-section h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -468,12 +507,19 @@ footer a:hover {
     padding: 30px 20px;
   }
 
-  .about-intro-section,
+  .about-intro-section {
+    padding: 50px 20px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .flow-section {
     padding: 50px 20px;
   }
 
-  .about-intro-section h2,
   .flow-section h2 {
     font-size: 1.5rem;
     margin-bottom: 16px;
