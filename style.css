@@ -110,9 +110,8 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  padding-top: 120px;
 }
 
 .hero-image-bg {
@@ -399,10 +398,6 @@ footer a:hover {
     font-size: 0.85rem;
   }
 
-  .hero-image-section {
-    padding-top: 100px;
-  }
-
   .hero-title {
     font-size: 2rem;
   }
@@ -461,7 +456,6 @@ footer a:hover {
 
   .hero-image-section {
     height: 100vh;
-    padding-top: 80px;
   }
 
   .hero-title {
