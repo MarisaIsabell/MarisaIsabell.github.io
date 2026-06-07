@@ -206,12 +206,12 @@ main {
 }
 
 .about-image {
-  width: 95%;
+  width: 90%;
   overflow: hidden;
 }
 
 .about-image img {
-  width: 95%;
+  width: 90%;
   height: auto;
   display: block;
   object-fit: cover;
