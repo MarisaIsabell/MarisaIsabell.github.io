@@ -183,6 +183,7 @@ body.secondary-page .nav-link.nav-active {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 12px;
+text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .page-hero h1 {
