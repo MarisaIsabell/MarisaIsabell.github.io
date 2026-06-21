@@ -882,3 +882,18 @@ footer a:hover {
     font-size: 1.4rem;
   }
 }
+
+.section-overlay-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.section-content {
+  position: relative;
+  z-index: 1;
+}
+
+.flow-section:has(.section-overlay-link) {
+  cursor: pointer;
+}
