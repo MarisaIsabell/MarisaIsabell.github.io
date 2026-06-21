@@ -350,7 +350,7 @@ main {
   padding: 100px 60px;
   background: var(--background);
   width: 100%;
-  border-top: none);
+  border-top: none;
 }
 
 .flow-section.light {
