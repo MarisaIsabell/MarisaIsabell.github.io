@@ -235,7 +235,7 @@ body.secondary-page .nav-link.nav-active {
   position: relative;
   z-index: 2;
   text-align: left;
-  padding: 60px 60px;
+  padding: 40px 40px;
   max-width: 900px;
   margin: 0;
 }
