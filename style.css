@@ -202,7 +202,7 @@ body.secondary-page .nav-link.nav-active {
 
 .hero-image-section {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -235,7 +235,7 @@ body.secondary-page .nav-link.nav-active {
   position: relative;
   z-index: 2;
   text-align: left;
-  padding: 40px 40px;
+  padding: 60px 60px;
   max-width: 900px;
   margin: 0;
 }
@@ -302,13 +302,13 @@ main {
 }
 
 .about-image {
-  width: 100%;
+  width: 80%;
   overflow: hidden;
    align-self: start;
 }
 
 .about-image img {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
   object-fit: cover;
