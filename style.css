@@ -302,12 +302,12 @@ main {
 }
 
 .about-image {
-  width: 70%;
+  width: 100%;
   overflow: hidden;
 }
 
 .about-image img {
-  width: 70%;
+  width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
