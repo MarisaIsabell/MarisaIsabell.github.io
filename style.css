@@ -5,7 +5,7 @@
    COLOR PALETTE - MINIMALIST
    ============================================ */
 :root {
-  --background: #ffffff;
+  --background: #fefae0;
   --text: #1a1a1a;
   --text-light: #666666;
   --accent: #d81159;
@@ -354,7 +354,7 @@ main {
 }
 
 .flow-section.light {
-  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  background: var(--background);
 }
 
 .flow-section h2 {
