@@ -304,6 +304,7 @@ main {
 .about-image {
   width: 100%;
   overflow: hidden;
+   align-self: start;
 }
 
 .about-image img {
@@ -311,6 +312,8 @@ main {
   height: auto;
   display: block;
   object-fit: cover;
+   max-height: 480px;
+   object-position: top;
 }
 
 .hero-icons {
