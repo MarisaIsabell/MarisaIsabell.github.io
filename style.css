@@ -5,7 +5,7 @@
    COLOR PALETTE - MINIMALIST
    ============================================ */
 :root {
-  --background: #F2F2F2;
+  --background: #ffffff;
   --text: #1a1a1a;
   --text-light: #666666;
   --accent: #d81159;
@@ -273,7 +273,7 @@ main {
   padding: 80px 60px;
   background: var(--background);
   width: 100%;
-  border-bottom: none;
+  border-bottom: 1px solid var(--border);
 }
 
 .about-content {
@@ -350,11 +350,11 @@ main {
   padding: 100px 60px;
   background: var(--background);
   width: 100%;
-  border-top: none;
+  border-top: 1px solid var(--border);
 }
 
 .flow-section.light {
-  background: var(--background);
+  background: var(--beige);
 }
 
 .flow-section h2 {
@@ -687,5 +687,198 @@ footer a:hover {
 
   .page-hero h1 {
     font-size: 1.6rem;
+  }
+}
+
+/* ============================================
+   INNER PAGE LAYOUT
+   ============================================
+   Used on all pages except index.html.
+   Nav sits over the page-hero (position: fixed,
+   transparent) exactly like the home page.
+   ============================================ */
+
+.inner-main {
+  padding: 0;
+  width: 100%;
+}
+
+.inner-section {
+  padding: 80px 60px;
+}
+
+.inner-section + .inner-section {
+  padding-top: 0;
+}
+
+.inner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inner-content h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 24px 0;
+  letter-spacing: -0.01em;
+}
+
+.inner-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.inner-content p:last-child {
+  margin-bottom: 0;
+}
+
+.inner-content strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* CV page: short hero (no background image) */
+.page-hero--short {
+  height: 28vh;
+  min-height: 200px;
+  background: var(--text);
+}
+
+/* ============================================
+   PUBLICATIONS LIST
+   ============================================ */
+
+.pub-year-group {
+  margin-bottom: 56px;
+}
+
+.pub-year-group:last-child {
+  margin-bottom: 0;
+}
+
+.pub-year-label {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-entry {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-entry:last-child {
+  border-bottom: none;
+}
+
+.pub-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+  display: block;
+  margin-top: 2px;
+}
+
+.pub-journal {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pub-doi {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 2px;
+  display: inline-block;
+  letter-spacing: 0.01em;
+}
+
+.pub-doi:hover {
+  color: var(--accent-hover);
+}
+
+.pub-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.pub-badge--preprint {
+  background: #fff3e0;
+  color: #b35c00;
+}
+
+.pub-badge--thesis {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* ============================================
+   RESPONSIVE — INNER PAGES
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .inner-section {
+    padding: 60px 40px;
+  }
+  .inner-section + .inner-section {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner-section {
+    padding: 48px 30px;
+  }
+  .inner-section + .inner-section {
+    padding-top: 0;
+  }
+  .inner-content h2 {
+    font-size: 1.6rem;
+  }
+  .pub-year-label {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-section {
+    padding: 40px 20px;
+  }
+  .inner-section + .inner-section {
+    padding-top: 0;
+  }
+  .inner-content h2 {
+    font-size: 1.4rem;
   }
 }
