@@ -350,11 +350,11 @@ main {
   padding: 100px 60px;
   background: var(--background);
   width: 100%;
-  border-top: 1px solid var(--border);
+  border-top: none;
 }
 
 .flow-section.light {
-  background: var(--beige);
+  background: var(--background);
 }
 
 .flow-section h2 {
