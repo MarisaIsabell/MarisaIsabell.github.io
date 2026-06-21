@@ -350,7 +350,7 @@ main {
    ============================================ */
 
 .flow-section {
-  padding: 80px 60px;
+  padding: 60px 40px;
   background: var(--background);
   width: 100%;
   border-top: none;
@@ -503,7 +503,7 @@ footer a:hover {
   }
 
   .flow-section {
-    padding: 80px 40px;
+    padding: 60px 40px;
   }
 
   .flow-section h2 {
@@ -560,7 +560,7 @@ footer a:hover {
   }
 
   .flow-section {
-    padding: 60px 30px;
+    padding: 50px 30px;
   }
 
   .flow-section h2 {
