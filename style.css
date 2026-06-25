@@ -713,3 +713,7 @@ footer a:hover {
     font-size: 1.6rem;
   }
 }
+
+.pub-authors strong {
+  color: var(--accent);
+}
