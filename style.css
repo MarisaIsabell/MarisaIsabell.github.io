@@ -126,7 +126,6 @@ body.secondary-page .nav-link {
 
 .site-nav--scrolled {
   background: var(--background);
-  border-bottom: 1px solid var(--border);
   box-shadow: 0 1px 0 var(--border);
 }
 
@@ -297,7 +296,6 @@ main {
   padding: 80px 60px;
   background: var(--background);
   width: 100%;
-  border-bottom: 1px solid var(--border);
 }
 
 .about-content {
@@ -374,7 +372,6 @@ main {
   padding: 100px 60px;
   background: var(--background);
   width: 100%;
-  border-top: 1px solid var(--border);
 }
 
 .flow-section.light {
