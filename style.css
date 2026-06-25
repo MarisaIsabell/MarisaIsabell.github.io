@@ -172,7 +172,7 @@ body.secondary-page .nav-link.nav-active {
 .page-hero-text {
   position: relative;
   z-index: 2;
-  padding: 60px 60px;
+  padding: 60px 57px;
 }
 
 .page-hero-label {
@@ -629,7 +629,7 @@ footer a:hover {
   }
 
   .hero-text-container {
-    padding: 30px 20px;
+    padding: 30px 18px;
   }
 
   .about-intro-section {
