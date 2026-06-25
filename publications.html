@@ -59,6 +59,14 @@
       .join(", ");
   }
 
+  function highlightName(authorsStr) {
+    // Bold all variants of Marisa Keller's name (married) and Metzger (maiden)
+    return authorsStr.replace(
+      /((Keller|Metzger),\s+M(?:arisa(?:\s+Isabell)?(?:\s+I\.?)?|\s+I\.)?\.?)/g,
+      "<strong>$1</strong>"
+    );
+  }
+
   function getYear(pub) {
     // Zotero CSL JSON uses issued.date-parts, not a top-level date field
     if (pub.issued && pub.issued["date-parts"] && pub.issued["date-parts"][0]) {
@@ -128,7 +136,7 @@
 
             entry.innerHTML = `
               <div class="pub-meta">
-                <span class="pub-authors">${pub.authors}</span>
+                <span class="pub-authors">${highlightName(pub.authors)}</span>
                 <strong class="pub-title">${pub.title}</strong>
                 <span class="pub-journal"><em>${pub.journal}</em> ${badge}</span>
                 ${doiLink}
