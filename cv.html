@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | Marisa Isabell Keller</title>
+  <title>Marisa Isabell Keller</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,195 +14,145 @@
     <div class="nav-brand">
       <a href="index.html" class="nav-name">Marisa Isabell Keller</a>
     </div>
+
     <div class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html" class="nav-link nav-active">Home</a>
       <a href="index.html#about" class="nav-link">About</a>
       <a href="research.html" class="nav-link">Research</a>
       <a href="msca-pf.html" class="nav-link">MSCA-PF</a>
       <a href="publications.html" class="nav-link">Publications</a>
       <a href="news.html" class="nav-link">News</a>
-      <a href="cv.html" class="nav-link nav-active">CV</a>
+      <a href="cv.html" class="nav-link">CV</a>
     </div>
   </nav>
 
-  <section class="page-hero">
-    <img src="assets/img/DSC01222.jpeg" alt="CV" class="page-hero-bg">
-    <div class="page-hero-overlay"></div>
-    <div class="page-hero-text">
-      <span class="page-hero-label">Dr. Marisa Isabell Keller</span>
-      <h1>Curriculum Vitae</h1>
+  <!-- Full-bleed Hero Image with Overlay Text -->
+  <section class="hero-image-section">
+    <img src="assets/img/IMG_0040.JPG" alt="Marisa Isabell Keller" class="hero-image-bg">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-text-container">
+      <h1 class="hero-title">I'm Marisa Isabell Keller,<br>a computational biologist fascinated by microbes. Our evolutionary oldest friends, invisible partners, and important fellows.</h1>
     </div>
   </section>
 
-  <main class="inner-main">
+  <main>
+    <!-- About Introduction Section -->
+    <section class="about-intro-section" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <p class="intro-text">
+            I am a Marie Słodovska Curie postdoctoral researcher in the group of Torben Hansen at the Novo Nordisk Foundation Center for Basic Metabolic Research (CBMR), Faculty of Health and Medical Sciences, University of Copenhagen.
+             </p>
+          <p class="intro-text">
+            My research focuses on human health, leveraging computational biology, metagenomics, and multi-omics approaches to understand the role of human and microbiome genetics in health and disease.
+          </p>
+          
+          <div class="hero-icons">
+            <a href="https://orcid.org/0000-0002-1485-415X" target="_blank" aria-label="ORCID">
+              <img src="https://cdn.simpleicons.org/orcid/d81159" alt="">
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=rikPBz0AAAAJ" target="_blank" aria-label="Google Scholar">
+              <img src="https://cdn.simpleicons.org/googlescholar/d81159" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/marisa-isabell-keller-954705142/" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#d81159">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67h-3.56V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.34zM5.34 7.43c-1.14 0-2.03-.92-2.03-2.04 0-1.12.89-2.04 2.03-2.04 1.13 0 2.04.92 2.04 2.04 0 1.12-.91 2.04-2.04 2.04zm1.76 13.02H3.58V9h3.52v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+              </svg>
+            </a>
+            <a href="https://bsky.app/profile/maelschermarisa.bsky.social" target="_blank" aria-label="Bluesky">
+              <img src="https://cdn.simpleicons.org/bluesky/d81159" alt="">
+            </a>
+          </div>
+        </div>
 
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Current position</h2>
-        <p>
-          <strong>Postdoctoral researcher</strong><br>
-          Novo Nordisk Foundation Center for Basic Metabolic Research,
-          University of Copenhagen, Denmark<br>
-          Proteogenomic and microbiome research in Greenlandic Inuit.
-        </p>
+        <div class="about-image">
+          <img src="assets/img/MarisaIsabellKeller_DSC6851_1920px.jpeg" alt="Marisa Isabell Keller">
+        </div>
       </div>
     </section>
 
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Research interests</h2>
+    <!-- Research Section -->
+    <section class="flow-section" style="position: relative;">
+      <div class="section-content">
+        <h2>Research</h2>
         <p>
-          Human–microbiome symbiosis, metagenomics, multi-omics, microbial ecology,
-          host–microbiome interactions, biomarker discovery, and computational biology.
+          Human-microbiome symbiosis represents one of the most fundamental relationships in biology. Through computational, molecular, and multi-omics biology, I investigate how our human and microbial genes influence human health and disease. 
+          I carry out this research in close collaboration with clinical experts, always aiming to improve disease management and provide foundations for translational advances. 
+        </p>
+        <p>
+         <a href="publications.html" class="link-arrow">Explore my current research →</a>
         </p>
       </div>
+      <a href="research.html" class="section-overlay-link" aria-hidden="true" tabindex="-1"></a>
     </section>
 
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Education</h2>
+    <!-- MSCA-PF Section -->
+    <section class="flow-section light" style="position: relative;">
+      <div class="section-content">
+        <h2>Marie Skłodowska-Curie Actions Postdoctoral Fellowship</h2>
         <p>
-          <strong>Dr. rer. nat. Biology, magna cum laude</strong><br>
-          Ludwig-Maximilians University Würzburg, Germany, 2020–2024
+          I am honored to be supported by the MSCA Postdoctoral Fellowship from the European Union, awarded for the project "ARCTIC - Assessing diabetes and obesity risk through
+causal biomarkers from host proteogenomic and gut microbiome in Greenlandic Inuit"
         </p>
         <p>
-          <strong>M.Sc. Molecular Bioscience</strong><br>
-          Ruprecht-Karls University Heidelberg, Germany, 2016–2019
-        </p>
-        <p>
-          <strong>B.Sc. Bioscience</strong><br>
-          Ruprecht-Karls University Heidelberg, Germany, 2013–2016
+          <a href="msca-pf.html" class="link-arrow">Learn more about the project →</a>
         </p>
       </div>
+      <a href="msca-pf.html" class="section-overlay-link" aria-hidden="true" tabindex="-1"></a>
     </section>
 
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Research experience</h2>
+    <!-- Publications Section -->
+    <section class="flow-section" style="position: relative;">
+      <div class="section-content">
+        <h2>Publications</h2>
         <p>
-          <strong>Postdoc | Proteogenomic &amp; Microbiome in Greenlandic Inuit</strong><br>
-          University of Copenhagen, Denmark, 2025–present
+          My research is published in peer-reviewed journals. My first-author papers include studies about the lung microbiome in adolescence with Cystic Fibrosis, the fecal microbiome and its interaction with bile acids during liver fibrosis development, and an investigation of the global fecal microbiome and its dysbiosis. 
         </p>
         <p>
-          <strong>Postdoctoral fellow | Human microbiome research</strong><br>
-          European Molecular Biology Laboratory, Heidelberg, Germany, 2024–2025
+          <a href="publications.html" class="link-arrow">View all publications →</a>
+        </p>
+      </div>
+      <a href="publications.html" class="section-overlay-link" aria-hidden="true" tabindex="-1"></a>
+    </section>
+
+    <!-- News Section -->
+    <section class="flow-section light" style="position: relative;">
+      <div class="section-content">
+        <h2>News & Updates</h2>
+        <p>
+          All updates on my latest scientific activities, talks, publications, and news in the life of a researcher.
         </p>
         <p>
-          <strong>Predoctoral fellow | Human microbiome research</strong><br>
-          European Molecular Biology Laboratory, Heidelberg, Germany, 2020–2024<br>
-          PhD project on biomarkers derived from the human fecal microbiome in the context of pancreatic and liver diseases.
+          <a href="news.html" class="link-arrow">Read all updates →</a>
         </p>
       </div>
+      <section class="flow-section light" style="position: relative;">
     </section>
 
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Grants &amp; fellowships</h2>
-        <p><strong>Marie Skłodowska-Curie Actions Postdoctoral Fellowship</strong></p>
+    <!-- CV Section -->
+    <section class="flow-section" style="position: relative;">
+      <div class="section-content">
+        <h2>Curriculum Vitae</h2>
         <p>
-          <strong>ERASMUS+ grant</strong><br>
-          Internship in the Segata Lab, Trento, Italy, 2018
-        </p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Selected publications</h2>
-        <p>
-          Keller, M. I., de Zawadzki, A. et al. Alcohol-related liver disease disrupts bile acid homeostasis and gut microbial bile acid metabolism. <em>JHEP Reports</em>, 2026.
+          My full CV provides detailed information about my education, experience, publications, and professional activities.
         </p>
         <p>
-          Keller, M. I. et al. Refined Enterotyping Reveals Dysbiosis in Global Fecal Metagenomes. <em>bioRxiv</em>, 2024.
-        </p>
-        <p>
-          Metzger, M. I. et al. A Volatile and Dynamic Longitudinal Microbiome Is Associated With Less Reduction in Lung Function in Adolescents With Cystic Fibrosis. <em>Frontiers in Cellular and Infection Microbiology</em>, 2021.
-        </p>
-        <p>Please refer to <a href="https://orcid.org/0000-0002-1485-415X" target="_blank">ORCID</a> for a full publication list.</p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Technical skills</h2>
-        <p>
-          <strong>Advanced:</strong> R, RStudio, Git, GitHub/GitLab, metagenomics,
-          metatranscriptomics, taxonomic and functional profiling, genomic analysis,
-          proteomics, multi-omics, statistical and longitudinal analysis, machine learning,
-          clustering, visualization, microbial ecology, biomarker detection, data integration.
-        </p>
-        <p>
-          <strong>Intermediate:</strong> Linux shell, cluster computing, Bash, Python, Conda,
-          metabolomics, single-cell sequencing analysis.
-        </p>
-        <p>
-          <strong>Molecular and microbial biology:</strong> DNA extraction, qPCR, primer and probe design,
-          bacterial culture, cloning, and protein extraction.
+          <a href="cv.html" class="link-arrow">View full CV →</a>
         </p>
       </div>
+      <a href="cv.html" class="section-overlay-link" aria-hidden="true" tabindex="-1"></a>
     </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Teaching &amp; supervision</h2>
-        <p>Co-supervision of a master intern, 2024.</p>
-        <p>Trainer in the EMBL bioinformatics predoc course, 2022.</p>
-        <p>Lecture on tidy data in R and microbiome analysis, 2021.</p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Honors &amp; awards</h2>
-        <p>2nd prize at MICROB-PREDICT abstract session, 2024.</p>
-        <p>Best project prize at SymbNet PhD summer school, 2023.</p>
-        <p>1st poster prize at MICROB-PREDICT poster session, 2021.</p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Scientific presentations</h2>
-        <p>Oral presentation at NUNAMED, Greenlandic Health Conference, Nuuk, Greenland, 2025.</p>
-        <p>Invited online presentation at Texas Medical Center, Digestive Diseases Center, 2024.</p>
-        <p>Oral presentation at the European Association for the Study of the Liver congress, Milan, Italy, 2024.</p>
-        <p>Posters at the International Human Microbiome Consortium congress, Rome, Italy, 2024.</p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Scientific service</h2>
-        <p>Co-organizer of the Symbiosis Summer School Alumni Seminar Series, 2025–present.</p>
-        <p>Reviewer for Microbiome, Springer Nature, 2024–2026.</p>
-        <p>Science communication within EMBL World of Molecular Biology guided tours, 2023–2024.</p>
-        <p>Co-chairing the finance team for the 23rd EMBL PhD symposium, 2021.</p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>Languages</h2>
-        <p>German native, English fluent, Latin qualification.</p>
-      </div>
-    </section>
-
-    <section class="inner-section">
-      <div class="inner-content">
-        <h2>References</h2>
-        <p>Available upon request.</p>
-      </div>
-    </section>
-
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 Marisa Isabell Keller</p>
     <p>
       <a href="mailto:marisa.keller@sund.ku.dk">Email</a> ·
       <a href="https://github.com/MarisaIsabell">GitHub</a> ·
       <a href="https://scholar.google.com/citations?hl=en&user=rikPBz0AAAAJ">Google Scholar</a> ·
-      <a href="https://orcid.org/0000-0002-1485-415X">ORCID</a> ·
+      <a href="https://orcid.org/0000-0002-1485-415X">ORCID</a> .
       <a href="impressum.html">Impressum</a>
     </p>
   </footer>
