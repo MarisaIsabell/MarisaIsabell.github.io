@@ -1,4 +1,4 @@
-       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,59 +7,70 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-         <body>
+<body>
   <!-- Navigation -->
   <nav class="site-nav">
     <div class="nav-brand">
       <a href="index.html" class="nav-name">Marisa Isabell Keller</a>
     </div>
-
     <div class="nav-links">
-      <a href="index.html" class="nav-link nav-active">Home</a>
+      <a href="index.html" class="nav-link">Home</a>
       <a href="index.html#about" class="nav-link">About</a>
       <a href="research.html" class="nav-link">Research</a>
       <a href="msca-pf.html" class="nav-link">MSCA-PF</a>
-      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="publications.html" class="nav-link nav-active">Publications</a>
       <a href="news.html" class="nav-link">News</a>
       <a href="cv.html" class="nav-link">CV</a>
     </div>
   </nav>
 
-         <section class="page-hero">
-  <img src="assets/img/IMG_0061.JPG" alt="Publications" class="page-hero-bg">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-text">
-    <span class="page-hero-label">Publications</span>
-    <h1>Publications</h1>
-  </div>
-         </section>
+  <section class="page-hero">
+    <img src="assets/img/IMG_0061.JPG" alt="Publications" class="page-hero-bg">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-text">
+      <span class="page-hero-label">Publications</span>
+      <h1>Publications</h1>
+    </div>
+  </section>
 
-
-  <main>
-    <section>
-      <h2>Publications</h2>
-      <p>
-        Publications are listed by year. DOI links point to the publication or preprint record.
-      </p>
-      <div id="publication-list">
-        <p>Loading publications...</p>
+  <main class="inner-main">
+    <section class="inner-section">
+      <div class="inner-content">
+        <p class="intro-text">
+          Publications are listed by year. DOI links point to the publication or preprint record.
+        </p>
+        <div id="publication-list">
+          <p>Loading publications...</p>
+        </div>
       </div>
     </section>
   </main>
 
   <script>
-  function formatAuthors(creators) {
-    if (!creators) return "";
-
-    return creators
-      .filter(c => c.creatorType === "author")
-      .map(c => `${c.lastName}, ${c.firstName?.[0] || ""}.`)
+  function formatAuthors(authors) {
+    if (!authors || !authors.length) return "";
+    return authors
+      .map(a => {
+        if (a.literal) return a.literal;
+        const last = a.family || "";
+        const first = a.given ? a.given[0] + "." : "";
+        return first ? `${last}, ${first}` : last;
+      })
       .join(", ");
   }
 
-  function getYear(date) {
-    if (!date) return "n.d.";
-    return date.substring(0, 4);
+  function getYear(pub) {
+    // Zotero CSL JSON uses issued.date-parts, not a top-level date field
+    if (pub.issued && pub.issued["date-parts"] && pub.issued["date-parts"][0]) {
+      return String(pub.issued["date-parts"][0][0]);
+    }
+    return "n.d.";
+  }
+
+  function getType(pub) {
+    if (pub.type === "thesis") return "thesis";
+    if (!pub.publicationTitle && !pub["container-title"]) return "preprint";
+    return "article";
   }
 
   async function loadPublications() {
@@ -70,11 +81,12 @@
       const publications = await response.json();
 
       const normalized = publications.map(pub => ({
-        year: getYear(pub.date),
-        authors: formatAuthors(pub.creators),
+        year: getYear(pub),
+        authors: formatAuthors(pub.author),
         title: pub.title || "",
-        journal: pub.publicationTitle || "Preprint",
-        doi: pub.DOI || ""
+        journal: pub["container-title"] || pub.publicationTitle || pub.publisher || "Preprint",
+        doi: pub.DOI || "",
+        type: getType(pub)
       }));
 
       normalized.sort((a, b) => b.year.localeCompare(a.year));
@@ -90,54 +102,40 @@
       Object.keys(grouped)
         .sort((a, b) => b.localeCompare(a))
         .forEach(year => {
+          const yearLabel = document.createElement("div");
+          yearLabel.className = "pub-year-label";
+          yearLabel.textContent = year;
+          list.appendChild(yearLabel);
+
           const yearGroup = document.createElement("div");
-yearGroup.className = "publication-year-group";
+          yearGroup.className = "pub-year-group";
+          list.appendChild(yearGroup);
 
-const separator = document.createElement("div");
-separator.className = "year-separator";
-
-list.appendChild(separator);
-list.appendChild(yearGroup);
-
-        grouped[year].forEach(pub => {
-  const row = document.createElement("div");
-  row.className = "publication-row";
-
-  const main = document.createElement("div");
-  main.className = "publication-main";
-
-  const yearEl = document.createElement("div");
-  yearEl.className = "publication-year";
-  yearEl.textContent = pub.year;
-
-  const doiLink = pub.doi
-    ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer">doi:${pub.doi}</a>`
-    : "";
-
-  main.innerHTML = `
-    <span class="publication-authors">${pub.authors}</span>.
-    <strong class="publication-title">${pub.title}</strong>.
-    <em class="publication-journal">${pub.journal}</em>.
-    ${doiLink}
-  `;
-
-  row.appendChild(main);
-  row.appendChild(yearEl);
-  yearGroup.appendChild(row);
-});
+          grouped[year].forEach(pub => {
+            const entry = document.createElement("div");
+            entry.className = "pub-entry";
 
             const doiLink = pub.doi
-              ? `<a href/doi.org/${pub.doi}doi:${pub.doi}</a>`
+              ? `<a class="pub-doi" href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer">doi:${pub.doi}</a>`
               : "";
 
-            item.innerHTML = `
-              ${pub.authors}
-              <strong>${pub.title}</strong>.
-              <em>${pub.journal}</em>.
-              ${doiLink}
+            let badge = "";
+            if (pub.type === "preprint") {
+              badge = `<span class="pub-badge pub-badge--preprint">Preprint</span>`;
+            } else if (pub.type === "thesis") {
+              badge = `<span class="pub-badge pub-badge--thesis">Thesis</span>`;
+            }
+
+            entry.innerHTML = `
+              <div class="pub-meta">
+                <span class="pub-authors">${pub.authors}</span>
+                <strong class="pub-title">${pub.title}</strong>
+                <span class="pub-journal"><em>${pub.journal}</em> ${badge}</span>
+                ${doiLink}
+              </div>
             `;
 
-            list.appendChild(item);
+            yearGroup.appendChild(entry);
           });
         });
 
@@ -148,12 +146,17 @@ list.appendChild(yearGroup);
   }
 
   loadPublications();
-</script>
+  </script>
 
   <footer>
     <p>© 2026 Marisa Isabell Keller</p>
-         <a href="https://orcid.org/0000-0002-1485-415X">ORCID</a> ·
+    <p>
+      <a href="mailto:marisa.keller@sund.ku.dk">Email</a> ·
+      <a href="https://github.com/MarisaIsabell">GitHub</a> ·
+      <a href="https://scholar.google.com/citations?hl=en&user=rikPBz0AAAAJ">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0002-1485-415X">ORCID</a> ·
       <a href="impressum.html">Impressum</a>
+    </p>
   </footer>
 </body>
 </html>
