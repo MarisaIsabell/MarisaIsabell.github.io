@@ -119,6 +119,30 @@ body.secondary-page .nav-link {
   color: var(--text);
 }
 
+/* ============================================
+   NAVIGATION — SCROLLED STATE (all pages)
+   Triggered by JS once scroll passes hero height
+   ============================================ */
+
+.site-nav--scrolled {
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 0 var(--border);
+}
+
+.site-nav--scrolled .nav-link {
+  color: var(--text);
+}
+
+.site-nav--scrolled .nav-link.nav-active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.site-nav--scrolled .nav-link:hover {
+  color: var(--accent);
+}
+
 body.secondary-page .nav-link:hover {
   color: var(--accent);
   font-weight: 700;
@@ -140,7 +164,7 @@ body.secondary-page .nav-link.nav-active {
 .page-hero {
   position: relative;
   width: 100%;
-  height: 66vh;
+  height: 100vh;
   min-height: 300px;
   overflow: hidden;
   display: flex;
@@ -172,7 +196,7 @@ body.secondary-page .nav-link.nav-active {
 .page-hero-text {
   position: relative;
   z-index: 2;
-  padding: 60px 57px;
+  padding: 50px 60px;
 }
 
 .page-hero-label {
@@ -183,7 +207,6 @@ body.secondary-page .nav-link.nav-active {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 12px;
-text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .page-hero h1 {
@@ -303,18 +326,15 @@ main {
 }
 
 .about-image {
-  width: 80%;
+  width: 70%;
   overflow: hidden;
-   align-self: start;
 }
 
 .about-image img {
-  width: 100%;
+  width: 70%;
   height: auto;
   display: block;
   object-fit: cover;
-   max-height: 480px;
-   object-position: top;
 }
 
 .hero-icons {
@@ -351,14 +371,14 @@ main {
    ============================================ */
 
 .flow-section {
-  padding: 60px 40px;
+  padding: 100px 60px;
   background: var(--background);
   width: 100%;
-  border-top: none;
+  border-top: 1px solid var(--border);
 }
 
 .flow-section.light {
-  background: var(--background);
+  background: var(--beige);
 }
 
 .flow-section h2 {
@@ -504,7 +524,7 @@ footer a:hover {
   }
 
   .flow-section {
-    padding: 60px 40px;
+    padding: 80px 40px;
   }
 
   .flow-section h2 {
@@ -561,7 +581,7 @@ footer a:hover {
   }
 
   .flow-section {
-    padding: 50px 30px;
+    padding: 60px 30px;
   }
 
   .flow-section h2 {
@@ -590,7 +610,7 @@ footer a:hover {
   }
 
   .page-hero {
-    height: 27vh;
+    height: 40vh;
     min-height: 260px;
   }
 
@@ -629,7 +649,7 @@ footer a:hover {
   }
 
   .hero-text-container {
-    padding: 30px 18px;
+    padding: 30px 20px;
   }
 
   .about-intro-section {
@@ -681,7 +701,7 @@ footer a:hover {
   }
 
   .page-hero {
-    height: 25vh;
+    height: 38vh;
     min-height: 220px;
   }
 
@@ -692,218 +712,4 @@ footer a:hover {
   .page-hero h1 {
     font-size: 1.6rem;
   }
-}
-
-/* ============================================
-   INNER PAGE LAYOUT
-   ============================================
-   Used on all pages except index.html.
-   Nav sits over the page-hero (position: fixed,
-   transparent) exactly like the home page.
-   ============================================ */
-
-.inner-main {
-  padding: 0;
-  width: 100%;
-}
-
-.inner-section {
-  padding: 80px 60px;
-}
-
-.inner-section + .inner-section {
-  padding-top: 0;
-}
-
-.inner-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.inner-content h2 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--text);
-  margin: 0 0 24px 0;
-  letter-spacing: -0.01em;
-}
-
-.inner-content p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: var(--text-light);
-  margin-bottom: 16px;
-}
-
-.inner-content p:last-child {
-  margin-bottom: 0;
-}
-
-.inner-content strong {
-  color: var(--text);
-  font-weight: 600;
-}
-
-/* CV page: short hero (no background image) */
-.page-hero--short {
-  height: 28vh;
-  min-height: 200px;
-  background: var(--text);
-}
-
-/* ============================================
-   PUBLICATIONS LIST
-   ============================================ */
-
-.pub-year-group {
-  margin-bottom: 56px;
-}
-
-.pub-year-group:last-child {
-  margin-bottom: 0;
-}
-
-.pub-year-label {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--text);
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-
-.pub-entry {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.pub-entry:last-child {
-  border-bottom: none;
-}
-
-.pub-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.pub-authors {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  line-height: 1.6;
-}
-
-.pub-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.5;
-  display: block;
-  margin-top: 2px;
-}
-
-.pub-journal {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.pub-doi {
-  font-size: 0.8rem;
-  color: var(--accent);
-  text-decoration: none;
-  margin-top: 2px;
-  display: inline-block;
-  letter-spacing: 0.01em;
-}
-
-.pub-doi:hover {
-  color: var(--accent-hover);
-}
-
-.pub-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 2px 7px;
-  border-radius: 2px;
-  vertical-align: middle;
-}
-
-.pub-badge--preprint {
-  background: #fff3e0;
-  color: #b35c00;
-}
-
-.pub-badge--thesis {
-  background: #e8f5e9;
-  color: #2e7d32;
-}
-
-/* ============================================
-   RESPONSIVE — INNER PAGES
-   ============================================ */
-
-@media (max-width: 1024px) {
-  .inner-section {
-    padding: 60px 40px;
-  }
-  .inner-section + .inner-section {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .inner-section {
-    padding: 48px 30px;
-  }
-  .inner-section + .inner-section {
-    padding-top: 0;
-  }
-  .inner-content h2 {
-    font-size: 1.6rem;
-  }
-  .pub-year-label {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .inner-section {
-    padding: 40px 20px;
-  }
-  .inner-section + .inner-section {
-    padding-top: 0;
-  }
-  .inner-content h2 {
-    font-size: 1.4rem;
-  }
-}
-
-.section-overlay-link {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.section-content {
-  position: relative;
-  z-index: 1;
-}
-
-.flow-section:has(.section-overlay-link) {
-  cursor: pointer;
-}
-
-.eu-logo {
-  height: 72px;
-  width: auto;
-  flex-shrink: 0;
 }
