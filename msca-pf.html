@@ -110,6 +110,13 @@ causal biomarkers from host proteogenomic and gut microbiome in Greenlandic Inui
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
 </script>
-  
+   <script>
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('nav-toggle--open');
+    navLinks.classList.toggle('nav-links--open');
+  });
+</script>
 </body>
 </html>
