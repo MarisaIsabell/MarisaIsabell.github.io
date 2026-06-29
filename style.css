@@ -118,33 +118,6 @@ body {
   color: white;
 }
 
-/* ============================================
-   NAVIGATION — SECONDARY PAGES (no hero image)
-   ============================================
-   Add class="secondary-page" to <body> on all
-   pages except index.html.
-   ============================================ */
-
-body.secondary-page .site-nav {
-  background: var(--background);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  box-shadow: 0 1px 0 var(--border);
-}
-
-body.secondary-page .nav-link {
-  color: var(--text);
-}
-
-body.secondary-page .nav-link:hover {
-  color: var(--accent);
-  font-weight: 700;
-}
-
-body.secondary-page .nav-link.nav-active {
-  color: var(--accent);
-  font-weight: 600;
-}
 
 /* ============================================
    PAGE HERO — secondary pages
