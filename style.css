@@ -137,7 +137,7 @@ text-decoration: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  background: none;
+  background: white;
   border: none;
   padding: 4px;
   position: relative;    /* ← add */
