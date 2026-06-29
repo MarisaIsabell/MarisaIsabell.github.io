@@ -166,7 +166,7 @@ text-decoration: none;
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .nav-toggle {
     display: none;
   }
