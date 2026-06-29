@@ -74,7 +74,7 @@ body {
   font-weight: 600;
 }
 
-.site-nav--scrolled .nav-name {
+.site-nav--scrolled .nav-name--secondary {
    color: var(--text);
 }
 
