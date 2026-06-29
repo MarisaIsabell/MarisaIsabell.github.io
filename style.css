@@ -185,7 +185,7 @@ text-decoration: none;
     justify-content: flex-start;    /* ← was center */
     padding-top: 80px;              /* ← space below nav bar */
     padding-right: 30px;            /* ← right alignment breathing room */
-    gap: 12px;
+    gap: 8px;
     z-index: 999;
   }
   .nav-links--open {
