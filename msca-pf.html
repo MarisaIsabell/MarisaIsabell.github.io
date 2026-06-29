@@ -96,5 +96,15 @@ causal biomarkers from host proteogenomic and gut microbiome in Greenlandic Inui
       </p>
     </div>
   </footer>
+  <script>
+  const nav = document.querySelector('.site-nav');
+  const hero = document.querySelector('.page-hero');
+  function updateNav() {
+    nav.classList.toggle('site-nav--scrolled', window.scrollY >= hero.offsetHeight);
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+</script>
+  
 </body>
 </html>
