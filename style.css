@@ -74,6 +74,10 @@ body {
   font-weight: 600;
 }
 
+.site-nav--scrolled .nav-name {
+   color: var(--acent);
+}
+
 .nav-brand {
   flex-shrink: 0;
 }
