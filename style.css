@@ -57,6 +57,25 @@ body {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+.site-nav--scrolled {
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 0 var(--border);
+}
+
+.site-nav--scrolled .nav-link {
+  color: var(--text);
+}
+
+.site-nav--scrolled .nav-link:hover {
+  color: var(--accent);
+}
+
+.site-nav--scrolled .nav-link.nav-active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .nav-brand {
   flex-shrink: 0;
 }
