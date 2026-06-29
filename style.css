@@ -122,6 +122,9 @@ body {
   color: var(--accent);
 }
 
+.nav-name--secondary {
+  color: white;
+}
 
 /* ============================================
    PAGE HERO — secondary pages
