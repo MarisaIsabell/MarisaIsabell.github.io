@@ -110,5 +110,16 @@
   updateNav();
 </script>
   
+  <script>
+  const nav = document.querySelector('.site-nav');
+  const hero = document.querySelector('.page-hero');
+  function updateNav() {
+    nav.classList.toggle('site-nav--scrolled', window.scrollY >= hero.offsetHeight);
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+</script>
+
+  
 </body>
 </html>
