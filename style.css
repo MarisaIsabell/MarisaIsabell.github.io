@@ -93,6 +93,7 @@ body {
 
 .nav-name:hover {
   color: var(--accent-hover);
+   text-decoration: none;
 }
 
 .nav-links {
@@ -533,6 +534,7 @@ footer a:hover {
 
   .nav-name {
     font-size: 0.85rem;
+   text-decoration: none;
   }
 
   .nav-links {
