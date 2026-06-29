@@ -125,6 +125,7 @@ body {
 
 .nav-name--secondary {
   color: white;
+text-decoration: none;
 }
 
 /* ============================================
