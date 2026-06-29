@@ -679,8 +679,8 @@ footer a:hover {
   }
 
   .nav-brand {
-    width: 100%;
-    margin-bottom: 15px;
+    width: auto;
+    margin-bottom: 0;
   }
 
   .nav-links {
