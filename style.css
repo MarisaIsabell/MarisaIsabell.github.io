@@ -168,7 +168,7 @@ text-decoration: none;
 
 @media (max-width: 768px) {
   .nav-toggle {
-    display: none;
+    display: flex;
   }
 
   .nav-links {
