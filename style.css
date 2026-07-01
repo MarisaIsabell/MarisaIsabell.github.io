@@ -135,7 +135,7 @@ text-decoration: none;
 .nav-toggle {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   cursor: pointer;
   background: none;
   border: none;
@@ -183,9 +183,9 @@ text-decoration: none;
     flex-direction: column;
     align-items: flex-end;          /* ← was center */
     justify-content: flex-start;    /* ← was center */
-    padding-top: 80px;              /* ← space below nav bar */
+    padding-top: 10px;              /* ← space below nav bar */
     padding-right: 30px;            /* ← right alignment breathing room */
-    gap: 8px;
+    gap: 6px;
     z-index: 999;
   }
   .nav-links--open {
@@ -193,7 +193,7 @@ text-decoration: none;
   }
   .nav-links .nav-link {
     color: white;                   /* ← was var(--text), needs to show on hero */
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .nav-links .nav-link.nav-active {
     color: var(--accent);
