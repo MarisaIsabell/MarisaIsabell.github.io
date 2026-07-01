@@ -183,7 +183,7 @@ text-decoration: none;
     flex-direction: column;
     align-items: flex-end;          /* ← was center */
     justify-content: flex-start;    /* ← was center */
-    padding-top: 10px;              /* ← space below nav bar */
+    padding-top: 30px;              /* ← space below nav bar */
     padding-right: 30px;            /* ← right alignment breathing room */
     gap: 6px;
     z-index: 999;
