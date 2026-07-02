@@ -240,6 +240,23 @@ text-decoration: none;
   z-index: 1;
 }
 
+.photo-credit {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  z-index: 2;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.photo-credit:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .page-hero-text {
   position: relative;
   z-index: 2;
