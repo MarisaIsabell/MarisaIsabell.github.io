@@ -363,7 +363,7 @@ main {
 }
 
 .intro-text {
-  font-size: 1.05rem;
+  font-size: 1.0rem;
   line-height: 1.8;
   color: var(--text-light);
   margin-bottom: 20px;
@@ -442,7 +442,7 @@ main {
 }
 
 .flow-section p {
-  font-size: 1.05rem;
+  font-size: 1.0rem;
   line-height: 1.8;
   color: var(--text-light);
   margin-bottom: 20px;
