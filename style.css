@@ -198,6 +198,9 @@ text-decoration: none;
   .nav-links .nav-link.nav-active {
     color: var(--accent);
   }
+   .site-nav--scrolled .nav-links--open {
+  background: var(--background);
+}
 }
 
 /* ============================================
