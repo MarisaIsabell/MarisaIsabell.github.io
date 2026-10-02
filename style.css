@@ -192,7 +192,7 @@ text-decoration: none;
     display: flex;
   }
   .nav-links .nav-link {
-    color: white;                   /* ← was var(--text), needs to show on hero */
+    color: var(--accent);                   /* ← was var(--text), needs to show on hero */
     font-size: 1rem;
   }
   .nav-links .nav-link.nav-active {
