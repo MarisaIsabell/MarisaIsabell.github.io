@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | Marisa Isabell Keller</title>
+  <meta name="description" content="The Colorful Poo Collection: free microbiome illustrations for talks, posters, teaching and scientific publications." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="secondary-page">
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <a href="index.html" class="nav-name--secondary">Marisa Isabell Keller</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="msca-pf.html" class="nav-link">MSCA-PF</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="cv.html" class="nav-link">CV</a>
+      <a href="resources.html" class="nav-link nav-active">Resources</a>
+    </div>
+  </nav>
+
+  <section class="page-hero page-hero--short">
+    <div class="page-hero-overlay" style="background: rgba(26,26,26,0.85);"></div>
+    <div class="page-hero-text">
+      <span class="page-hero-label">Resources</span>
+      <h1>free materials to use and share</h1>
+    </div>
+  </section>
+
+  <main class="inner-main">
+
+    <section class="inner-section" id="colorful-poo">
+      <div class="inner-content">
+        <h2>The Colorful Poo Collection</h2>
+        <p>
+          During my PhD, I was sometimes a little envious of my colleagues in microbiome
+          research. They sampled lakes, forests, soils and oceans, and came back with
+          beautiful photos of the places they had been. My samples came from the human
+          gut. When it was time to show pictures, I had… poo to show.
+        </p>
+        <p>
+          And poo is almost always drawn brown. But as a microbiologist, I see it
+          differently: a stool sample is home to trillions of microbes from hundreds of
+          species. When we show microbial communities in our figures, we use every color
+          we can find. So why not the poo itself?
+        </p>
+        <p>
+          That is how the colorful poo came about. Since then, I have received so much
+          lovely feedback on it that I decided to make the drawings freely available.
+          Use them in your talks, posters, teaching and papers. I would love to see
+          where they end up!
+        </p>
+
+        <div class="resource-grid">
+          <figure class="resource-card">
+            <div class="resource-image">
+              <img src="assets/img/resources/colorful-poo.png"
+                   alt="Line drawing of a poo filled with colorful translucent circles and small microbe shapes"
+                   loading="lazy">
+            </div>
+            <figcaption>
+              <span class="resource-title">Colorful poo</span>
+              <span class="resource-meta">PNG · 1200 × 1069 px · transparent</span>
+              <a href="assets/img/resources/colorful-poo.png" download class="resource-download">Download ↓</a>
+            </figcaption>
+          </figure>
+
+          <figure class="resource-card">
+            <div class="resource-image">
+              <img src="assets/img/resources/colorful-poo-sample-cup.png"
+                   alt="Line drawing of a stool sample container holding a colorful poo with microbe shapes"
+                   loading="lazy">
+            </div>
+            <figcaption>
+              <span class="resource-title">Colorful poo in a sample cup</span>
+              <span class="resource-meta">PNG · 1205 × 1234 px · transparent</span>
+              <a href="assets/img/resources/colorful-poo-sample-cup.png" download class="resource-download">Download ↓</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="license-box">
+          <h3>License</h3>
+          <p>
+            These illustrations are licensed under
+            <a rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>.
+            You may share and adapt them for non-commercial purposes, as long as you give credit.
+          </p>
+          <p>
+            <strong>Additional permission for scientific publications:</strong> you may also
+            use the illustrations, with credit, in scientific publications, including journal
+            articles, preprints, theses, book chapters, posters and conference presentations,
+            even when the work is published by a commercial publisher or under an open-access
+            license such as CC BY.
+          </p>
+          <p>
+            All other commercial use requires my permission. Please
+            <a href="mailto:marisa.keller@sund.ku.dk">get in touch</a>.
+          </p>
+
+          <h3>Please credit as</h3>
+          <div class="credit-line">
+            <code id="credit-text">"Colorful Poo" illustration by Marisa Isabell Keller, CC BY-NC 4.0, marisaisabell.github.io</code>
+            <button type="button" class="credit-copy" data-copy="credit-text">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Marisa Isabell Keller</p>
+    <p>
+      <a href="mailto:marisa.keller@sund.ku.dk">Email</a> ·
+      <a href="https://github.com/MarisaIsabell">GitHub</a> ·
+      <a href="https://scholar.google.com/citations?hl=en&user=rikPBz0AAAAJ">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0002-1485-415X">ORCID</a> ·
+      <a href="impressum.html">Impressum</a>
+    </p>
+  </footer>
+
+  <script>
+  const nav = document.querySelector('.site-nav');
+  const hero = document.querySelector('.page-hero');
+  function updateNav() {
+    nav.classList.toggle('site-nav--scrolled', window.scrollY >= hero.offsetHeight);
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+</script>
+
+  <script>
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('nav-toggle--open');
+    navLinks.classList.toggle('nav-links--open');
+  });
+</script>
+
+  <script>
+  document.querySelectorAll('.credit-copy').forEach(button => {
+    button.addEventListener('click', () => {
+      const text = document.getElementById(button.dataset.copy).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        button.textContent = 'Copied!';
+        setTimeout(() => { button.textContent = 'Copy'; }, 2000);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
